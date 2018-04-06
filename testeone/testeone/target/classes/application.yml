@@ -1,8 +1,0 @@
-server:
-  port: 8081
-
-spring:
-  application.name: testeone
-  datasource.url: jdbc:mysql://localhost:3306/testeone
-  datasource.username: root
-  datasource.password: root

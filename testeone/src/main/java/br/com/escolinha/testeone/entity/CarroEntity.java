@@ -1,6 +1,5 @@
 package br.com.escolinha.testeone.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,7 +8,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-@Table(name = "Carro")
+@Table(name = "CARRO_TB")
 public class CarroEntity {
 
 	@Id

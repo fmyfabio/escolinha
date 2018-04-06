@@ -21,18 +21,19 @@ import br.com.escolinha.testeone.entity.CarroEntity;
 public class CarroController {
 	
 	@Autowired
-	private EntityManager entityManager;
+	private CarroDao carroDao;
 	
 	@RequestMapping(value = "/listar", method = RequestMethod.GET)
 	public ResponseEntity<List<CarroEntity>> get() {
 		
-		List<CarroEntity> lista = null; 
+		List<CarroEntity> lista = this.carroDao.listar(); 
 		return new ResponseEntity<>(lista, HttpStatus.OK);
 	}
 	
 	@RequestMapping(value = "/salvar", method = RequestMethod.POST)
 	public ResponseEntity<Void> post(@RequestBody CarroEntity carro) {
 		
+		this.carroDao.salvar(carro);
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
 	
