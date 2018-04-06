@@ -1,7 +1,22 @@
 package br.com.escolinha.testeone.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
+@Table(name = "Carro")
 public class CarroEntity {
 
+	@Id
+   	@GeneratedValue
+   	@JsonIgnore
+	private Integer id;
+	
 	private String modelo;
 	
 	private Integer ano;

@@ -14,7 +14,7 @@ public class ContaPolimorfismo {
 		System.out.println("Valor Conta Corrente Depois do Saque: "+contaCorrente.getValor());
 		
 		contaPoupanca.sacar(200.00);
-		System.out.println("Valor Conta Poupança Depois do Saque: "+contaCorrente.getValor());
+		System.out.println("Valor Conta Poupança Depois do Saque: "+contaPoupanca.getValor());
 		
 	}
 
